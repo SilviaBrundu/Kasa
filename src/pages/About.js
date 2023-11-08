@@ -1,9 +1,10 @@
 import React from 'react';
+import BannerAbout from '../components/BannerAbout';
 
 function About () {
     return (
         <div> 
-            <p>Hello 2</p>
+            <BannerAbout />
         </div>
     )
 }
