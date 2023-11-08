@@ -1,0 +1,22 @@
+.bannerImg,
+.bannerOpacity {
+    width: 92%;
+    height: 223px; 
+    object-fit: cover;
+    margin: 30px 50px;
+    border-radius: 20px; 
+}  
+
+.bannerOpacity {
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.bannerTitle {
+    display: flex;
+    top: -181px;
+    position: relative;
+    justify-content: center;
+    color: white;
+}
