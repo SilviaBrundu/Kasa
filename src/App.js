@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import Error from "./components/Error";
-// import Banner from "./components/Banner";
-// import BannerAbout from "./components/BannerAbout";
 
 function App() {
   return (

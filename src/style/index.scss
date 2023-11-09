@@ -1,6 +1,8 @@
 @import './settings.scss';
+@import './general';
 @import './navbar';
 @import './banner';
+@import './error';
 
 body {
   margin: 0;
