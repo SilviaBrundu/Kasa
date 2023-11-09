@@ -1,20 +1,16 @@
-.navbarContainer {
-    display: flex;
-    justify-content: space-between;
+.navbar_container {
+    @include flexrow-spaceb;
     margin: 30px 50px;
-}
 
-nav {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-}
+    nav {
+        @include flexrow-itemscenter;
+        gap: 50px;
+    }
 
-
-a {
-    color: #FF6060;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-size: 30px;
-    font-weight: 500;
+    .navbar_link{
+        color: $text-pink;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 500;
+    }
 }

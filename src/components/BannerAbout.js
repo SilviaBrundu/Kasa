@@ -2,10 +2,10 @@ import imageSource2 from '../img/ImageSource2.png'
 
 function BannerAbout() {
     return (
-        <div className='bannerContainer'>
-            <div className='bannerOpacity'></div>
-            <div className='bannerImgContainer'>
-                <img className='bannerImg' src={imageSource2} alt="foret" />
+        <div className='banner_container'>
+            <div className='banner_opacity'></div>
+            <div className='banner_container_img'>
+                <img className='banner_img' src={imageSource2} alt="foret" />
             </div>
         </div>
     )

@@ -2,13 +2,13 @@ import imageSource1 from "../img/ImageSource1.png"
 
 function Banner() {
     return (
-        <div className='bannerContainer'>
-            <div className="bannerOpacity"></div>
-            <div className="bannerImgContainer">
-                <img className="bannerImg" src={imageSource1} alt="mer" />
+        <div className='banner_container'>
+            <div className="banner_opacity"></div>
+            <div className="banner_container_img">
+                <img className="banner_img" src={imageSource1} alt="mer" />
             </div>
-            <div className='bannerTitleContainer'>
-                <h1 className='bannerTitle'>Chez vous, partout et ailleurs</h1>
+            <div className='banner_container_title'>
+                <h1 className='banner_title'>Chez vous, partout et ailleurs</h1>
             </div>
       </div>
     )
