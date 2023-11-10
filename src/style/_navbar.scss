@@ -4,6 +4,7 @@
 
     nav {
         @include flexrow-itemscenter;
+        text-transform: uppercase;
         gap: 50px;
     }
 
