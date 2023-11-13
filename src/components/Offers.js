@@ -4,9 +4,9 @@ import Datas from '../datas/data.json'
 function Offers () {
     return(
         <div className='cards_container_box'>
-            <div className='cards_container'>{Datas.map((offers, index) => { //index = keys
-                return (
-                    <div key={index}>
+            <div className='cards_container'>{Datas.map((offers, index) => { //index = key, aide react a identifier les elements qui vont changer
+                return(    
+                    <div key={index}> 
                         <div className='card_content'>
                             <div className='card-content-img'>
                                 <img className= 'card_img' src={offers.cover} alt={offers.title}></img>
