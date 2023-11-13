@@ -14,6 +14,7 @@ function Error() {
                 <Link to='/' className="error_link">
                     Retournez sur la page d'accueil
                 </Link>
+                {/* Link remplace la balise a en react  */}
             </div>
         </div>
     )
