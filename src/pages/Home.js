@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 function Home () {
     return (
         <div> 
-            <Banner title = {'Chez vous, partout et ailleurs'} image = {ImageSource1} alt={'Vue sur la mer'}/>
+            <Banner title={'Chez vous, partout et ailleurs'} image={ImageSource1} alt={'Vue sur la mer'}/>
             <Offers />
             <Footer/>
         </div>
