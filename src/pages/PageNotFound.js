@@ -6,7 +6,7 @@ function PageNotFound () {
   return (
     <div>
       <Error />
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import Error from "./components/Error";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
-      <Route path="*" element={<Error />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   </BrowserRouter>
   // Les composants BrowserRouter, Routes et Route permettent de gérer l'affichage des différentes pages.

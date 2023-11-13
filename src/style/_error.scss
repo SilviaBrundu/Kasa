@@ -1,6 +1,7 @@
 .error_container_all {
     @include flexcolumn-itemscenter;
     color: $text-pink;
+    margin-bottom: 100px;
 
     .error_title{
         font-size: 200px;

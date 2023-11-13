@@ -10,7 +10,7 @@ function Home () {
         <div> 
             <Banner title={'Chez vous, partout et ailleurs'} image={ImageSource1} alt={'Vue sur la mer'}/>
             <Offers />
-            <Footer/>
+            <Footer />
         </div>
     )
 }
