@@ -1,10 +1,10 @@
-import Datas from '../datas/data.json'
+import Data from '../data/data.json'
 //je récupère le fichier jSon
 
 function Offers () {
     return(
         <div className='cards_container_box'>
-            <div className='cards_container'>{Datas.map((offers, index) => { //index = key, aide react a identifier les elements qui vont changer
+            <div className='cards_container'>{Data.map((offers, index) => { //index = key, aide react a identifier les elements qui vont changer
                 return(    
                     <div key={index}> 
                         <div className='card_content'>
