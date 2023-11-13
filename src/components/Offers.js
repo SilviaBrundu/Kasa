@@ -10,6 +10,7 @@ function Offers () {
                         <div className='card_content'>
                             <div className='card-content-img'>
                                 <img className= 'card_img' src={offers.cover} alt={offers.title}></img>
+                                <div className='card_opacity'></div>
                             </div>
                             <div className='card_content_title'>
                                 <h2 className='card_title'>{offers.title}</h2>
