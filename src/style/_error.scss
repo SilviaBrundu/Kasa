@@ -1,6 +1,6 @@
 .error_container_all {
     @include flexcolumn-itemscenter;
-    color: $text-pink;
+    color: $text-red;
     margin-bottom: 100px;
 
     .error_title{
@@ -15,7 +15,7 @@
     }
 
     .error_link{
-        color: $text-pink;
+        color: $text-red;
         font-size: 18px;
         text-decoration: underline;
     }
