@@ -1,19 +1,13 @@
 .about_container {
+    @include flexcolumn-itemscenter;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 30px;
         
     .about_content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexrow-spacebitemscenter;
+        @include aboutContent;
         background-color: $bg-red;
-        width: 1023px;
-        max-width: 100%;
         color: $text-white;
-        border-radius: 7px;
         cursor: pointer;
         border: none;
     
@@ -35,11 +29,9 @@
     }
     
     .about_text_content {
+        @include aboutContent;
         background-color: $bg-grey;
-        width: 1023px;
-        max-width: 100%;
-        border-radius: 7px;
-            
+           
         .about_text {
             color: $text-red;
             font-size: 18px;
