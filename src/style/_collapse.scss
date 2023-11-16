@@ -11,6 +11,7 @@
         align-items: center;
         background-color: $bg-red;
         width: 1023px;
+        max-width: 100%;
         color: $text-white;
         border-radius: 7px;
         cursor: pointer;
@@ -36,6 +37,7 @@
     .about_text_content {
         background-color: $bg-grey;
         width: 1023px;
+        max-width: 100%;
         border-radius: 7px;
             
         .about_text {
