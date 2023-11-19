@@ -1,13 +1,14 @@
 import React from 'react';
 import Error from '../components/Error';
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 
 function PageNotFound () {
   return (
-    <div>
-      <Error />
-      <Footer />
-    </div>
+    <Layout>
+      <div>
+        <Error />
+      </div>
+    </Layout>
   )
 }
 
