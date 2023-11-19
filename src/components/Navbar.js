@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../img/LOGO.png'
  
 function Navbar() {
@@ -8,8 +8,10 @@ function Navbar() {
                 <img className='logo' src={logo} alt="Kasa"  />    
             </div>
             <nav>
-                <Link to='/' className='navbar_link'>Accueil</Link>
-                <Link to='/About' className='navbar_link'>A propos</Link>
+                <NavLink to='/' className='navbar_link'>Accueil</NavLink> 
+                <NavLink to='/About' className='navbar_link'>A propos</NavLink>
+                {/* NavLink est utilisé pour afficher un style différent lorsque l'URL actuelle correspond au lien 
+                (je l'utilise pour afficher l underline avec .active dans le css)*/}
             </nav>
         </div>
     )
