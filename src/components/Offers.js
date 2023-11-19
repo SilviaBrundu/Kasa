@@ -7,7 +7,7 @@ function Offers () {
             <div className='cards_container'>{Data.map((offers, index) => { //index = key, aide react a identifier les elements qui vont changer
                 return(    
                     <div key={index}> 
-                        <div className='card_content'>
+                        <div className='card_content'> 
                             <div className='card-content-img'>
                                 <img className= 'card_img' src={offers.cover} alt={offers.title}></img>
                                 <div className='card_opacity'></div>

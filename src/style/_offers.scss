@@ -11,24 +11,38 @@
         padding: 45px 45px 88px 45px;
         margin-bottom: 75px;
 
-        .card-content-img{
-            .card_img{
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-        } 
-
-        .card_content{
+        .card_content {
             width: 100%;
             height: 252px;
+
+            .card-content-img{
+                .card_img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+                
+                .card_opacity {
+                    background-color: black;
+                    opacity: 0.3;
+                    position: relative;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    height: 86px;
+                    width: 100%;
+                    margin-bottom: 0px;
+                    top: -90px;
+                }
+                
+
+            } 
             
             .card_title{
                 font-size: 18px;
                 display: flex;
                 position: relative;
-                top: -90px;
+                top: -172px;
                 color: $text-white;
                 padding-left: 15px;
             }
