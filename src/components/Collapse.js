@@ -14,11 +14,7 @@ function Collapse ({title, text}) {
                 <h1 className='about_title'>{title}</h1>
                 <img src={Arrow} alt="arrow" className="arrow"></img>
             </div>
-            {visible&&(
-                <div className='about_text_content'>
-                    <p className='about_text'>{text}</p>
-                </div>
-            )}
+            <div className={`about_text_content ${visible ? 'dropDown' : ''}`}>{text}</div>
         </div>
     )   
 }
