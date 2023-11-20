@@ -5,9 +5,7 @@ import Layout from '../components/Layout';
 function PageNotFound () {
   return (
     <Layout>
-      <div>
         <Error />
-      </div>
     </Layout>
   )
 }
