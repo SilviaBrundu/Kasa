@@ -24,15 +24,14 @@
                 }
                 
                 .card_opacity {
-                    background-color: black;
+                    background: linear-gradient(0, black 18%, transparent 30%);
                     opacity: 0.3;
                     position: relative;
-                    border-bottom-left-radius: 10px;
-                    border-bottom-right-radius: 10px;
-                    height: 86px;
+                    height: 298px;
                     width: 100%;
                     margin-bottom: 0px;
-                    top: -90px;
+                    top: -304px;
+                    border-radius: 7px;
                 }
                 
 
@@ -42,7 +41,7 @@
                 font-size: 18px;
                 display: flex;
                 position: relative;
-                top: -172px;
+                top: -386px;
                 color: $text-white;
                 padding-left: 15px;
             }
