@@ -1,6 +1,7 @@
 import { useParams, Navigate } from 'react-router-dom';
 import Data from '../data/data.json';
 import Layout from '../components/Layout';
+import SlideShow from '../components/SlideShow';
 
 function OfferFile() {
     
@@ -12,7 +13,7 @@ function OfferFile() {
     }
     return(
         <Layout>
-
+            <SlideShow />
         </Layout>
     )
 }
