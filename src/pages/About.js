@@ -8,8 +8,8 @@ import Layout from '../components/Layout';
 function About () {
     return (
         <Layout>
-                <Banner image={imageSource2} alt={'vue sur la forêt'} />
-                <CollapseContainer />
+            <Banner image={imageSource2} alt={'vue sur la forêt'} />
+            <CollapseContainer />
         </Layout>
     )
 }

@@ -5,8 +5,8 @@ function Collapse ({title, text}) {
     const [ visible, setVisible ] = useState(false)
     
     const handleToggle = () => {
-        setVisible(!visible);
-      };
+        setVisible(!visible)
+    }
     
     return (
         <div className='about_container'>

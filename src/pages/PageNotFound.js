@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 function PageNotFound () {
   return (
     <Layout>
-        <Error />
+      <Error />
     </Layout>
   )
 }
