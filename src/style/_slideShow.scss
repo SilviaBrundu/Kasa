@@ -1,16 +1,21 @@
 .slide_show_container {
-    .slide_show_pictures img{
-        display: none;
+    .slide_show_pictures{
+        display: flex;
+        justify-content: center;
+        margin: 45px 0;
+
+        img{
+            display: none;
         
-        &.visible {          
-            display: flex;  
-            width: 1240px;
-            height: 415px;
-            object-fit:cover;
-            border-radius: 15px;
+            &.visible {          
+                display: flex;  
+                width: 1240px;
+                height: 415px;
+                object-fit:cover;
+                border-radius: 15px;
             }  
-        }    
-    
+        }   
+    }     
 
     .slide_container {
         display: flex;
