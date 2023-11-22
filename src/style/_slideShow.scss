@@ -1,0 +1,37 @@
+.slide_show_container {
+    .slide_show_pictures img{
+        display: none;
+        
+        &.visible {          
+            display: flex;  
+            width: 1240px;
+            height: 415px;
+            object-fit:cover;
+            border-radius: 15px;
+            }  
+        }    
+    
+
+    .slide_container {
+        display: flex;
+        position: absolute;
+        top: 172px;
+
+        .slide_arrow { 
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            bottom: 25px;
+            padding: 2px;
+        }
+
+        .slide_arrow_right {
+
+        }
+
+        .slide_arrow_left {
+                
+        }
+        
+    }
+    }
