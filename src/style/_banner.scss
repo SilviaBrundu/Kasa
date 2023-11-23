@@ -1,11 +1,18 @@
 .banner_container{
+    width: 1240px;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+
     .banner_img,
     .banner_opacity {
-        width: 92%;
-        height: 223px; 
+        width: 1240px;
+        max-width: 100%;
+        height: 223px;
         object-fit: cover;
-        margin: 30px 50px 0 50px;
-        border-radius: 20px; 
+        border-radius: 20px;
+        margin: 30px auto;
     }  
 
     .banner_opacity {
@@ -14,11 +21,15 @@
         position: absolute;
     }
 
-    .banner_title {
+    .banner_container_title {
+        @include Content;
         @include flexrow-contentcenter;
-        color: $text-white;
-        top: -154px;
-        position: relative;
-        font-weight: 500;
+        position: absolute;
+        top: 12VH;
+        
+        .banner_title {
+            color: $text-white;
+            font-weight: 500;
+        }
     }
 }

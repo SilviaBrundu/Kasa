@@ -1,6 +1,7 @@
 .cards_container_box{
+    @include Content;
+    margin: auto;
     background-color: $bg-grey;
-    margin: 0 50px 0 50px;
     border-radius: 20px;
     
     .cards_container{
@@ -34,8 +35,6 @@
                     top: -304px;
                     border-radius: 7px;
                 }
-                
-
             } 
             
             .card_title{

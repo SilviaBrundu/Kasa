@@ -7,7 +7,7 @@
             display: none;
         
             &.visible {
-                @include slideShowContent;          
+                @include Content;          
                 display: flex; 
                 object-fit:cover;
                 border-radius: 15px;
@@ -16,7 +16,7 @@
         }   
 
         .slide_container {
-            @include slideShowContent; 
+            @include Content; 
             @include flexcolumn-itemscenter;
             top: -130px;
             position: relative;
@@ -38,7 +38,7 @@
             }
             
             .slide_number_img {
-                color: white;
+                color: $text-white;
                 position: absolute;
                 top: 70px;
             }        

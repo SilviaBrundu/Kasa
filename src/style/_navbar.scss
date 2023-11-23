@@ -1,6 +1,8 @@
 .navbar_container {
     @include flexrow-spaceb;
-    margin: 30px 114px;
+    @include Content;
+    margin: auto;
+    padding-top: 23px;
 
     nav {
         @include flexrow-itemscenter;
