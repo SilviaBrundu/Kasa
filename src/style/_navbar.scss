@@ -9,6 +9,11 @@
             height: 47px;
             margin: 10px 20px 10px 20px
         } 
+
+        @media screen and (max-width: 300px) {
+            height: 18px;
+            margin: 10px 20px 10px 20px
+        }
     }
 
     nav {
@@ -32,6 +37,10 @@
             font-size: 14px;
             margin: 10px 20px 10px 10px
         } 
+
+        @media screen and (max-width: 300px) {
+            font-size: 12px;
+        }
     }
 
     .navbar_link.active{
