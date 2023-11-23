@@ -23,12 +23,13 @@ function SlideShow () {
     return (
         <div className="slide_show_container">
             <div className='slide_show_pictures'>
+
                 {pictures.map((picture, index) => (
                 <img key={index} src={picture} alt="Photo logement" className={index === Slide ? 'visible' : ''}/>
                 ))}
-            </div>
-            {pictures.length > 1 && (
-            // si le nombre d'image est superrieur a 1 alors on affiche les fleches et le nombre d'image
+
+                {pictures.length > 1 && (
+                // si le nombre d'image est superrieur a 1 alors on affiche les fleches et le nombre d'image
                 <div className='slide_container' >
                     <div className='slide_content'>
                         <img className="slide_arrow slide_arrow_left" src={ArrowLeft} alt="gauche" onClick={() => changeSlide(-1)}></img>
@@ -36,7 +37,9 @@ function SlideShow () {
                     </div>
                     <p className='slide_number_img'>{Slide + 1 }/{pictures.length}</p>
                 </div>
-            )}
+                )}
+
+            </div>
         </div>
     )
 }
