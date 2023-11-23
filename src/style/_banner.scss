@@ -11,6 +11,10 @@
         object-fit: cover;
         border-radius: 20px;
         margin: 30px auto;
+
+        @media screen and (max-width: 750px) {
+            height: 163px;
+        } 
     }  
 
     .banner_opacity {
@@ -23,11 +27,15 @@
         @include Content;
         @include flexrow-contentcenter;
         position: absolute;
-        top: 12VH;
+        top: 12vh;
+
+        @media screen and (max-width: 750px) {
+            top: 9vh;
+        } 
 
         @media screen and (max-width: 380px) {
             margin: 0 0 0 11px;
-            } 
+        } 
         
         .banner_title {
             color: $text-white;
