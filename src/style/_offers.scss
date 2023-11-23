@@ -17,8 +17,9 @@
         margin-bottom: 75px;
 
         @media screen and (max-width: 750px) {
-                display: flex;
-                flex-direction: column;
+            @include flexcolumn;
+            padding: 45px 20px 88px 20px;
+
         } 
 
         .card_content {

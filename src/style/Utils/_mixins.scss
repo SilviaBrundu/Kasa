@@ -29,6 +29,11 @@
     align-items: center;
 }
 
+@mixin flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin aboutContent {
     width: 1023px;
     max-width: 100%;
