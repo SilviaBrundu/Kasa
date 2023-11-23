@@ -3,6 +3,10 @@
     margin: auto;
     background-color: $bg-grey;
     border-radius: 20px;
+
+    @media screen and (max-width: 750px) {
+        background-color: white;
+    } 
     
     .cards_container{
         display: grid;
@@ -11,6 +15,11 @@
         grid-row-gap: 40px;
         padding: 45px 45px 88px 45px;
         margin-bottom: 75px;
+
+        @media screen and (max-width: 750px) {
+                display: flex;
+                flex-direction: column;
+        } 
 
         .card_content {
             width: 100%;
@@ -44,7 +53,19 @@
                 top: -75px;
                 color: $text-white;
                 padding-left: 15px;
+
+                @media screen and (max-width: 998px) {
+                        font-size: 14px;
+                } 
+
+                @media screen and (max-width: 750px) {
+                    font-size: 18px;
+                } 
             }
         }
-    }  
-}
+    } 
+}   
+
+
+
+

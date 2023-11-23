@@ -1,8 +1,8 @@
 .navbar_container {
     @include flexrow-spaceb;
     @include Content;
-    margin: auto;
     padding-top: 23px;
+    margin: auto;
 
     nav {
         @include flexrow-itemscenter;
@@ -13,7 +13,7 @@
     .navbar_link{
         color: $text-red;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 500;
         text-transform: uppercase;
     }
