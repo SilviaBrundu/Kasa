@@ -24,10 +24,18 @@
         @include flexrow-contentcenter;
         position: absolute;
         top: 12VH;
+
+        @media screen and (max-width: 380px) {
+            top: 15VH;
+            } 
         
         .banner_title {
             color: $text-white;
             font-weight: 500;
+
+            @media screen and (max-width: 750px) {
+            font-size: 24px;
+            } 
         }
     }
 }
