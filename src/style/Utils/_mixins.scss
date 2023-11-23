@@ -34,3 +34,8 @@
     max-width: 100%;
     border-radius: 7px;
 }
+
+@mixin slideShowContent{
+    width: 1240px;
+    max-width: 100%;
+}
