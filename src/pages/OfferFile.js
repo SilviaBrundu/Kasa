@@ -7,10 +7,11 @@ import Information from '../components/InformationOfferFile';
 function OfferFile() {
     
     const { id } = useParams();
+
     const offerId = Data.find((element) => element.id === id);
 
     if (!offerId) {
-        return <Navigate to="/*" replace />;
+        return <Navigate to='/*' replace />;
     }
     return(
         <Layout>

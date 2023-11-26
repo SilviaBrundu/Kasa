@@ -12,7 +12,7 @@ function Collapse ({title, text}) {
         <div className='about_container'>
             <div onClick={handleToggle} className={`about_content ${visible ? 'rotateArrow' : ''}`}>
                 <h1 className='about_title'>{title}</h1>
-                <img src={Arrow} alt="arrow" className="arrow"></img>
+                <img src={Arrow} alt='arrow' className='arrow'></img>
             </div>
             <div className={`about_text_content ${visible ? 'dropDown' : ''}`}>{text}</div>
         </div>
