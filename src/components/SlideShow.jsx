@@ -2,7 +2,7 @@ import React from "react";
 import ArrowLeft from "../img/arrow_left.png";
 import ArrowRight from "../img/arrow_right.png";
 import { useState } from "react";
-import Data from '../data/data.json'
+import Data from '../data/data.json';
 import { useParams } from "react-router-dom";
 
 function SlideShow () {
