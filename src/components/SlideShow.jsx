@@ -1,8 +1,8 @@
 import React from 'react';
-import ArrowLeft from '../img/arrow_left.png';
-import ArrowRight from '../img/arrow_right.png';
+import arrowLeft from '../img/arrow_left.png';
+import arrowRight from '../img/arrow_right.png';
 import { useState } from 'react';
-import Data from '../data/data.json';
+import data from '../data/data.json';
 import { useParams } from 'react-router-dom';
 
 function SlideShow () {
@@ -10,7 +10,7 @@ function SlideShow () {
     const { id } = useParams();
     /*useParams permet d'extraire la valeur du paramètre "id" dans l'URL.*/
 
-    const pictures = Data.find((offer) => offer.id === id).pictures;
+    const pictures = data.find((offer) => offer.id === id).pictures;
 
     const [slide, setSlide] = useState(0);
 
@@ -32,8 +32,8 @@ function SlideShow () {
                 // si le nombre d'image est superrieur a 1 alors on affiche les fleches et le nombre d'image
                 <div className='slide_container' >
                     <div className='slide_content'>
-                        <img className='slide_arrow slide_arrow_left' src={ArrowLeft} alt='gauche' onClick={() => changeSlide(-1)}></img>
-                        <img className='slide_arrow slide_arrow_right' src={ArrowRight} alt='droite' onClick={() => changeSlide(1)}></img>
+                        <img className='slide_arrow slide_arrow_left' src={arrowLeft} alt='gauche' onClick={() => changeSlide(-1)}></img>
+                        <img className='slide_arrow slide_arrow_right' src={arrowRight} alt='droite' onClick={() => changeSlide(1)}></img>
                     </div>
                     <p className='slide_number_img'>{slide + 1 }/{pictures.length}</p>
                 </div>

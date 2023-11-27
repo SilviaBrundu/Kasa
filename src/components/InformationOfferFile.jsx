@@ -1,13 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Data from '../data/data.json';
+import data from '../data/data.json';
 import Rating from './Rating';
 
 
 function InformationOfferFile() {
     const { id } = useParams();
 
-    const {title, location, host, rating} = Data.find((information) => information.id === id)
+    const {title, location, host, rating} = data.find((information) => information.id === id)
 
     return (
         <div className='information_container'>
