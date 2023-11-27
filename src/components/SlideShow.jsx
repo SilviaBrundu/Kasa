@@ -12,10 +12,10 @@ function SlideShow () {
 
     const pictures = Data.find((offer) => offer.id === id).pictures;
 
-    const [Slide, setSlide] = useState(0);
+    const [slide, setSlide] = useState(0);
 
     const changeSlide = (direction) => {
-        const nextSlide = (Slide + direction + pictures.length) % pictures.length;
+        const nextSlide = (slide + direction + pictures.length) % pictures.length;
         setSlide(nextSlide);
     }
     //  * % pictures.length permet d'enchainer les slides en boucles. 
@@ -25,7 +25,7 @@ function SlideShow () {
             <div className='slide_show_pictures'>
 
                 {pictures.map((picture, index) => (
-                <img key={index} src={picture} alt='Photo logement' className={index === Slide ? 'visible' : ''}/>
+                <img key={index} src={picture} alt='logement' className={index === slide ? 'visible' : ''}/>
                 ))}
 
                 {pictures.length > 1 && (
@@ -35,7 +35,7 @@ function SlideShow () {
                         <img className='slide_arrow slide_arrow_left' src={ArrowLeft} alt='gauche' onClick={() => changeSlide(-1)}></img>
                         <img className='slide_arrow slide_arrow_right' src={ArrowRight} alt='droite' onClick={() => changeSlide(1)}></img>
                     </div>
-                    <p className='slide_number_img'>{Slide + 1 }/{pictures.length}</p>
+                    <p className='slide_number_img'>{slide + 1 }/{pictures.length}</p>
                 </div>
                 )}
 
