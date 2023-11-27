@@ -15,7 +15,7 @@ function Rating ({rating}) {
         stars.push(<span key={i}>{emptyStar}</span>);
     }
 
-    return <div className='stars'>{stars}</div>;
+    return <div className='information_stars_content'>{stars}</div>;
 };
 
     export default Rating;
