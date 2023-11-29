@@ -1,9 +1,9 @@
 function Host ({host}) {
 
     return (
-        <div className='information_host_content'>
-            <img className='informaton_host_picture'src={host.picture} alt={'hôte(sse): ' + host.name}></img>
-            <p className='information_host_name'>{host.name}</p>
+        <div className='info_host_content'>
+            <p className='info_host_name'>{host.name}</p>
+            <img className='info_host_picture'src={host.picture} alt={'hôte(sse): ' + host.name}></img>
         </div>
     )
 };

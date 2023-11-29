@@ -1,8 +1,8 @@
 function LocationOfferFile ({location}) {
 
     return (
-        <div className='information_location_content'>
-            <p className='information_location'>{location}</p>
+        <div className='info_location_content'>
+            <p className='info_location'>{location}</p>
         </div>
     )
 };

@@ -14,12 +14,16 @@ function InformationOfferFile() {
     const {title, location, tags, host, rating} = data.find((information) => information.id === id)
 
     return (
-        <div className='information_container'>
-            <TitleOfferFile title={title} />
-            <LocationOfferFile location={location} />
-            <Tags tags={tags} />
-            <Host host={host} />
-            <Rating rating={rating} />
+        <div className='info_container'>
+            <div className='info_div_1'>
+                <TitleOfferFile title={title} />
+                <LocationOfferFile location={location} />
+                <Tags tags={tags} />
+            </div>
+            <div className='info_div_2'>
+                <Host host={host} />
+                <Rating rating={rating} />
+            </div>
         </div>
     )
 }
