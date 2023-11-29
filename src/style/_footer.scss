@@ -19,13 +19,8 @@
             padding-bottom: 20px;
 
             @media screen and (max-width: 750px) {
-                padding: 0 63px 30px 113px;
+                text-align: center;
             } 
-
-            @media screen and (max-width: 380px) {
-                padding: 0 63px 30px 70px;
-            }
         }
-
     }
 }

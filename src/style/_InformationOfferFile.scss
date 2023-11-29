@@ -1,52 +1,74 @@
 .info_container {
-    .info_div_1 {
+    @include content;
+    @include flexcolumn;
+    margin: auto;
 
+    .info_div_1 {
         .info_title {
             color: $text-red;
             font-weight: 500;
-            font-size: 36px;
+            font-size: 28px;
+            margin: 0;
+
+            @media screen and (max-width: 998px) {
+                font-size: 19px;
+            } 
         }
 
         .info_location {
             color: $text-red;
             font-size: 18px;
+            margin: 5px 0 22px 0;
         }
+    }
+
+    .info_div_2 {
+        @include flexrow-spaceb;
+
+        @media screen and (max-width: 750px) {
+            @include flexcolumn;
+        } 
 
         .info_tags_content {
             display: flex;
             gap: 2%;
             padding: 0;
+            width: 100%;
+
+            @media screen and (max-width: 750px) {
+               margin: 0 0 55px 0; 
+            } 
+            
 
             .info_tags {
+                @include flexrow-itemscenter;
                 list-style-type: none;
-                padding: 5px 35px 5px 35px;
+                padding: 7px 35px 7px 35px;
                 font-size: 14px;
                 color: $text-white;
                 background-color: $bg-red;
                 text-align: center;
                 border-radius: 10px;
+
+                @media screen and (max-width: 750px) {
+                    padding: 7px 2% 7px 2%;
+                    font-size: 12px;
+                } 
             }
         }
-    }
-
-    .info_div_2 {
-
-        .info_host_content {
-            display: flex;
-
-            .info_host_picture {
-                border-radius: 50%;
-            }
-
-            .info_host_name {
-                color: $text-red;
-                font-size: 18px;
-            } 
-        }
-
-        
 
         .info_stars_content {
+            @include flexrow-itemscenter;
+            letter-spacing: 13px;
+
+            @media screen and (max-width: 998px) {
+                letter-spacing: 4px;
+            } 
+
+            @media screen and (max-width: 380px) {
+                font-size: 8px;
+            }
+
             .star {
                 color: $text-red;
             }
@@ -54,6 +76,41 @@
             .star_empty {
                 color: #E3E3E3;
             } 
-        }
+        }    
     } 
+
+    .info_div_3 {
+        .info_host_content {
+            display: flex;
+            float: right;
+            position: relative;
+            bottom: 171px;;
+
+            @media screen and (max-width: 750px) {
+                bottom: 42px;
+            } 
+
+            .info_host_picture {
+                border-radius: 50%;
+                width: 80px;
+
+                @media screen and (max-width: 380px) {
+                    width: 65px;
+                }
+            }
+
+            .info_host_name {
+                color: $text-red;
+                font-size: 18px;
+                text-align: end;
+                margin-right: 12px;
+
+                @media screen and (max-width: 750px) {
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                }
+            } 
+        }     
+    }
 }

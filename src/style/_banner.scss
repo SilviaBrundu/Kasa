@@ -1,12 +1,12 @@
 .banner_container{
-    @include Content;
+    @include content;
     display: flex;
     position: relative;
     margin: auto;
 
     .banner_img,
     .banner_opacity {
-        @include Content;
+        @include content;
         height: 223px;
         object-fit: cover;
         border-radius: 20px;
@@ -24,7 +24,7 @@
     }
 
     .banner_container_title {
-        @include Content;
+        @include content;
         @include flexrow-contentcenter;
         position: absolute;
         top: 12vh;

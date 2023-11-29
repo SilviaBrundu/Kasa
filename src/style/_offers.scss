@@ -1,5 +1,5 @@
 .cards_container_box{
-    @include Content;
+    @include content;
     margin: auto;
     background-color: $bg-grey;
     border-radius: 20px;
@@ -55,7 +55,7 @@
                 padding-left: 15px;
 
                 @media screen and (max-width: 998px) {
-                        font-size: 14px;
+                    font-size: 14px;
                 } 
 
                 @media screen and (max-width: 750px) {

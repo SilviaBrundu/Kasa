@@ -7,7 +7,7 @@
             display: none;
         
             &.visible {
-                @include Content;          
+                @include content;          
                 display: flex; 
                 object-fit:cover;
                 border-radius: 15px;
@@ -24,7 +24,7 @@
         }   
 
         .slide_container {
-            @include Content; 
+            @include content; 
             @include flexcolumn-itemscenter;
             top: -130px;
             position: relative;

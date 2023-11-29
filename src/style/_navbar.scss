@@ -1,6 +1,6 @@
 .navbar_container {
     @include flexrow-spaceb;
-    @include Content;
+    @include content;
     padding-top: 23px;
     margin: auto;
 

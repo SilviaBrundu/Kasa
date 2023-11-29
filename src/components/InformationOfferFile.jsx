@@ -18,11 +18,13 @@ function InformationOfferFile() {
             <div className='info_div_1'>
                 <TitleOfferFile title={title} />
                 <LocationOfferFile location={location} />
-                <Tags tags={tags} />
             </div>
             <div className='info_div_2'>
-                <Host host={host} />
+                <Tags tags={tags} />
                 <Rating rating={rating} />
+            </div>
+            <div className='info_div_3'>
+                <Host host={host} />
             </div>
         </div>
     )
