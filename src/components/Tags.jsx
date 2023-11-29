@@ -1,6 +1,6 @@
 function Tags ({tags}) {
     const listTags = tags.map((tags, index) =>
-        <li key={index}>{tags}</li>
+        <li className='information_tags' key={index}>{tags}</li>
     )
 
     return (

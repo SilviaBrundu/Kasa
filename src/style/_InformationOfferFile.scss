@@ -1,9 +1,39 @@
-.information_stars_content {
-    .star {
-        color: #FF6060;
+.information_container {
+
+    .information_title {
+        color: $text-red;
+        font-weight: 500;
+        font-size: 36px;
     }
 
-    .star_empty {
-        color: #E3E3E3;
-    } 
+    .information_location, .information_host_name {
+        color: $text-red;
+        font-size: 18px;
+    }
+
+    .information_tags_content {
+        display: flex;
+
+        .information_tags {
+            list-style-type: none;
+            padding: 5px 20px 5px 20px;
+            font-size: 14px;
+            color: $text-white;
+            background-color: $bg-red;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+    }
+
+
+    .information_stars_content {
+        .star {
+            color: $text-red;
+        }
+
+        .star_empty {
+            color: #E3E3E3;
+        } 
+} 
 }
