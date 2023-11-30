@@ -43,6 +43,7 @@
         color: transparent;
         font-size: 18px;
         transition: all 0.3s ease-in-out; 
+        overflow: hidden;
 
         @media screen and (max-width: 380px) {
             font-size: 16px;
