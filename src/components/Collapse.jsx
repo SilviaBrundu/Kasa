@@ -9,15 +9,14 @@ function Collapse ({title, text}) {
     }
     
     return (
-        <div className='about_container'>
-            <div onClick={handleToggle} className={`about_content ${visible ? 'rotateArrow' : ''}`}>
-                <h1 className='about_title'>{title}</h1>
+        <div className='collapse_container'>
+            <div onClick={handleToggle} className={`collapse_content ${visible ? 'rotateArrow' : ''}`}>
+                <h1 className='collapse_title collapse_title_info'>{title}</h1>
                 <img src={arrow} alt='arrow' className='arrow'></img>
             </div>
-            <div className={`about_text_content ${visible ? 'dropDown' : ''}`}>{text}</div>
+            <div className={`collapse_text_content collapse_text_content_info ${visible ? 'dropDown' : ''}`}>{text}</div>
         </div>
     )   
 }
-
 
 export default Collapse;

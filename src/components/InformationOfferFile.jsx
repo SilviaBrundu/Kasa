@@ -27,7 +27,7 @@ function InformationOfferFile() {
             <div className='info_div_3'>
                 <Host host={host} />
             </div>
-            <div className='info_div_3'>
+            <div className='info_div_4'>
                 <CollapseInfo description={description} equipments={equipments}/>
             </div>
         </div>

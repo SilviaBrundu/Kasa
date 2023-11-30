@@ -1,9 +1,9 @@
-.about_container {
+.collapse_container {
     @include flexcolumn-itemscenter;
     width: 100%;
     margin-bottom: 30px;
         
-    .about_content {
+    .collapse_content {
         @include flexrow-spacebitemscenter;
         @include aboutContent;
         background-color: $bg-red;
@@ -11,7 +11,7 @@
         cursor: pointer;
         border: none;
     
-        .about_title {
+        .collapse_title {
             font-weight: 500;
             padding-left: 10px;
 
@@ -32,7 +32,7 @@
         } 
     }
     
-    .about_text_content {
+    .collapse_text_content {
          @include aboutContent;
         max-height: 0;
         height: 0;
@@ -48,7 +48,6 @@
             color: $text-red;
             transition: all 0.3s ease-in-out;
             padding: 20px 0;
-        }
-        
+        } 
     } 
 }

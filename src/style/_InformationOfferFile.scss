@@ -112,4 +112,36 @@
             } 
         }     
     }
+
+    .info_div_4 {
+        .info_collapse_container {
+            display: flex;
+            gap: 8%;
+
+            @media screen and (max-width: 750px) {
+                @include flexcolumn;
+            }
+
+            .info_description_content, .info_equipments_content {
+                width: 46%;
+
+                @media screen and (max-width: 750px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .collapse_title_info {
+            font-size: 18px;
+        }
+
+        .collapse_text_content_info {
+            list-style-type: none;
+            font-weight: 400;
+
+            &.dropDown {
+                @include flexcolumn;
+            } 
+        }
+    }
 }
