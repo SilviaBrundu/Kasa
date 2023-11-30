@@ -1,4 +1,8 @@
 .footer_container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
     background-color: $bg-black;
     margin: 0 -15px;
 

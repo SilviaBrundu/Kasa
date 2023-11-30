@@ -117,11 +117,23 @@
         .info_collapse_container {
             display: flex;
             gap: 8%;
+            position: relative;
+            top: -36px;
 
             @media screen and (max-width: 750px) {
                 @include flexcolumn;
+                position: initial;
             }
 
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                .info_equipments {
+                    padding: 0 0 7px 24px;
+                }
+            }
             .info_description_content, .info_equipments_content {
                 width: 46%;
 
@@ -141,7 +153,11 @@
 
             &.dropDown {
                 @include flexcolumn;
-            } 
+            }
+            
+            p {
+                @include textCollapse;
+            }
         }
     }
 }
