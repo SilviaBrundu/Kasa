@@ -6,12 +6,13 @@ import Host from './Host';
 import TitleOfferFile from './TitleOfferFile';
 import LocationOfferFile from './LocationOfferFile';
 import Tags from './Tags';
+import CollapseInfo from './CollapseInfo';
 
 
 function InformationOfferFile() {
     const { id } = useParams();
 
-    const {title, location, tags, host, rating} = data.find((information) => information.id === id)
+    const {title, location, tags, host, rating ,description , equipments} = data.find((information) => information.id === id)
 
     return (
         <div className='info_container'>
@@ -25,6 +26,9 @@ function InformationOfferFile() {
             </div>
             <div className='info_div_3'>
                 <Host host={host} />
+            </div>
+            <div className='info_div_3'>
+                <CollapseInfo description={description} equipments={equipments}/>
             </div>
         </div>
     )

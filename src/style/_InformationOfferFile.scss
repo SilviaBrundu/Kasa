@@ -39,7 +39,6 @@
                margin: 0 0 55px 0; 
             } 
             
-
             .info_tags {
                 @include flexrow-itemscenter;
                 list-style-type: none;
@@ -48,7 +47,7 @@
                 color: $text-white;
                 background-color: $bg-red;
                 text-align: center;
-                border-radius: 10px;
+                border-radius: 18px;
 
                 @media screen and (max-width: 750px) {
                     padding: 7px 2% 7px 2%;
