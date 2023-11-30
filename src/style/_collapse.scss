@@ -40,6 +40,10 @@
         font-size: 18px;
         transition: all 0.3s ease-in-out;  
 
+        .info_equipments {
+            padding: 0 0 7px 24px;
+        }
+
         &.dropDown {
             display: flex;
             background-color: $bg-grey;

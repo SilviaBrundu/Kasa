@@ -2,11 +2,11 @@ import React from 'react';
 import Collapse from './Collapse';
 
 
-function CollapseContainer () {
+function CollapseAbout (text) {
   return (
     <div className='about_container'>
       <Collapse title='Fiabilité' text='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos equipes.'/>
-
+      
       <Collapse title='Respect' text='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entraînera une exclusion de notre plateforme.'/>
 
       <Collapse title='Service' text='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entraînera une exclusion de notre plateforme.'/>
@@ -16,4 +16,4 @@ function CollapseContainer () {
   )
 }
 
-export default CollapseContainer;
+export default CollapseAbout;
