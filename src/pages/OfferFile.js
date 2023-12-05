@@ -11,7 +11,7 @@ function OfferFile() {
     const offerId = data.find((element) => element.id === id);
 
     if (!offerId) {
-        return <Navigate to='/*' replace />;
+        return <Navigate to='/404' replace />;
     }
     return(
         <Layout>
